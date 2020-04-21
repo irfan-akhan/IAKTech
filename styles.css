@@ -1,0 +1,340 @@
+:root {
+    --text-primary: #ffffff;
+    --text-black: #000000;
+    --bg-black: #000000;
+    --text-grey: #8d8d8d;
+    --bg-yellow: #fed231;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.clearfix {
+    content: "";
+    clear: both;
+    display: table;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;
+    line-height: normal;
+    color: #fff;
+    background: var(--bg-black);
+}
+body * {
+    margin: 0 auto;
+    text-align: center;
+}
+a.button {
+    text-decoration: none;
+    text-transform: capitalize;
+    border: 1px solid var(--text-black);
+    padding: 1.3rem 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000;
+    font-size: 1.5rem;
+}
+header a.button:hover {
+    background: var(--bg-black);
+    color: var(--bg-yellow);
+}
+nav {
+    width: 90vw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    bottom: 20%;
+    left: 5%;
+    z-index: 1000;
+}
+nav div.follow {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+nav div.resume {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    color: var(--text-primary);
+}
+
+nav * {
+    text-decoration: none;
+    color: var(--text-primary);
+    text-transform: uppercase;
+    padding: 1rem 0;
+}
+nav button.download {
+    border: 1px solid var(--text-primary);
+    background: transparent;
+    font-size: 1rem;
+    padding: 0.7rem;
+    cursor: pointer;
+}
+nav a::after {
+    content: "";
+    height: 3rem;
+    display: block;
+    background: var(--text-primary);
+    width: 0.1rem;
+    margin-left: 50%;
+    margin-top: 1rem;
+}
+nav img {
+    filter: invert(1);
+    max-width: 50px;
+}
+header {
+    background: var(--bg-yellow);
+    min-height: 95vh;
+    margin: 0 auto;
+    position: relative;
+}
+header .main-heading {
+    width: 50%;
+    margin: 0 auto;
+    letter-spacing: 0.2rem;
+    line-height: 3rem;
+    color: var(--text-black);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+header .main-heading * {
+    margin-bottom: 2rem 0;
+}
+.main-heading .greeting {
+    text-align: start;
+    font-weight: 300;
+}
+.greeting span {
+    text-transform: capitalize;
+    display: block;
+    text-align: start;
+    font-size: 3em;
+    font-weight: 900;
+}
+header .anthem {
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: start;
+    margin: 2rem 0;
+    margin-bottom: 4rem;
+}
+header .sub-heading {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.4em;
+    margin-bottom: 2rem;
+}
+.float {
+    padding: 3rem 1rem;
+    background: red;
+    color: var(--text-black);
+    width: 30%;
+    position: absolute;
+    left: 50%;
+    margin-top: -4rem;
+    transform: translate(-50%);
+    background: var(--bg-yellow);
+    border: 1px solid var(--text-black);
+    text-transform: uppercase;
+}
+.float h1::after {
+    margin: 0.5rem auto;
+    content: "";
+    width: 30%;
+    background-color: var(--text-black);
+    height: 0.2rem;
+    display: block;
+}
+.float h1::before {
+    margin: 0.5rem auto;
+    content: "";
+    width: 30%;
+    background-color: var(--text-black);
+    height: 0.2rem;
+    display: block;
+}
+section#new {
+    width: 70%;
+    margin: 5rem auto;
+    display: flex;
+    flex-direction: column;
+}
+section#new .s-project {
+    width: 100%;
+    position: relative;
+    margin: 10rem 0;
+}
+section#new .s-project .screen {
+    width: 50%;
+    float: left;
+}
+section#new .s-project .details {
+    width: 50%;
+    position: absolute;
+    top: 0;
+    left: 45%;
+    height: 100%;
+    font-size: 2rem;
+    letter-spacing: 2px;
+}
+.details * {
+    margin: 1.5rem;
+    text-align: end;
+    text-transform: capitalize;
+}
+section#new .s-project img {
+    width: 100%;
+    cursor: pointer;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+.s-project .featured-project {
+    color: var(--text-grey);
+    font-size: 2rem;
+    letter-spacing: 2px;
+    font-weight: 300;
+}
+.s-project .project-name {
+    text-transform: capitalize;
+    color: var(--bg-yellow);
+    font-weight: 700;
+}
+.s-project .description {
+    padding: 3rem;
+    text-transform: unset;
+    background: #1b1b1b;
+    font-weight: 400;
+    font-size: 1rem;
+}
+.s-project .stack {
+    font-size: 1rem;
+    margin: 0;
+}
+.s-project .links a {
+    text-decoration: none;
+    margin: 0;
+    cursor: pointer;
+}
+.s-project .links a img {
+    margin: 1rem;
+    max-width: 30px;
+    filter: invert(1);
+}
+#projects {
+    width: 70%;
+    line-height: 2rem;
+    letter-spacing: 1.2px;
+}
+.card {
+    width: 100%;
+    margin-top: 8rem;
+    padding: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card * {
+    margin: 0 3rem;
+}
+.card img {
+    border: 1px solid var(--text-grey);
+    height: 200px;
+    width: 250px;
+    cursor: pointer;
+    border-radius: 0.5rem;
+}
+.text h2 {
+    color: var(--text-primary);
+    margin-bottom: 1rem;
+}
+.text p {
+    color: var(--text-grey);
+}
+section#about {
+    padding: 10rem 0;
+}
+section#contact div * {
+    margin: 3rem auto;
+    width: 40%;
+}
+section#contact div:first-of-type {
+    width: 100%;
+    background: #1b1b1b;
+}
+section#contact {
+    width: 100%;
+    background: #1b1b1b;
+}
+
+section#contact h2.heading {
+    color: #fed231;
+    text-transform: uppercase;
+    font-size: 2rem;
+    padding: 2rem;
+}
+section#contact input {
+    width: 50%;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 1rem 0;
+    margin: 1rem;
+    border-radius: 2rem;
+}
+section#contact button {
+    width: 10%;
+    font-size: 1.2rem;
+    outline: none;
+    padding: 0.7rem 0;
+    text-transform: uppercase;
+    background: #fed231;
+    outline: none;
+    border-radius: 2rem;
+}
+section#contact form {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer {
+    padding: 3rem 1rem;
+}
+footer::before {
+    margin: 5rem auto;
+    content: "";
+    width: 80%;
+    background-color: var(--bg-yellow);
+    height: 0.1rem;
+    display: block;
+}
+footer h2 {
+    margin-top: 1rem;
+    font-size: 1rem;
+    font-weight: 100;
+}
+
+@keyframes moveInFromLeft {
+    0% {
+        opacity: 0;
+        transform: translateY(-10rem);
+    }
+
+    50% {
+        opacity: 0.9;
+        transform: translateY(1.5rem);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
