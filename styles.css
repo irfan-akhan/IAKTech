@@ -41,26 +41,13 @@ header a.button:hover {
     color: var(--bg-yellow);
 }
 nav {
-    width: 90vw;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     position: fixed;
     bottom: 20%;
     left: 5%;
     z-index: 1000;
-}
-nav div.follow {
     margin: 0;
     display: flex;
     flex-direction: column;
-}
-nav div.resume {
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-self: center;
-    color: var(--text-primary);
 }
 
 nav * {
@@ -69,13 +56,7 @@ nav * {
     text-transform: uppercase;
     padding: 1rem 0;
 }
-nav button.download {
-    border: 1px solid var(--text-primary);
-    background: transparent;
-    font-size: 1rem;
-    padding: 0.7rem;
-    cursor: pointer;
-}
+
 nav a::after {
     content: "";
     height: 3rem;
@@ -87,7 +68,7 @@ nav a::after {
 }
 nav img {
     filter: invert(1);
-    max-width: 50px;
+    max-width: 30px;
 }
 header {
     background: var(--bg-yellow);
@@ -176,6 +157,7 @@ section#new .s-project {
 section#new .s-project .screen {
     width: 50%;
     float: left;
+    cursor: pointer;
 }
 section#new .s-project .details {
     width: 50%;
