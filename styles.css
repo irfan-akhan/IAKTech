@@ -46,17 +46,10 @@ nav {
     left: 5%;
     z-index: 1000;
     margin: 0;
+    text-decoration: none;
     display: flex;
     flex-direction: column;
 }
-
-nav * {
-    text-decoration: none;
-    color: var(--text-primary);
-    text-transform: uppercase;
-    padding: 1rem 0;
-}
-
 nav a::after {
     content: "";
     height: 3rem;
@@ -149,11 +142,13 @@ section#new {
     display: flex;
     flex-direction: column;
 }
+
 section#new .s-project {
     width: 100%;
     position: relative;
     margin: 10rem 0;
 }
+
 section#new .s-project .screen {
     width: 50%;
     float: left;
@@ -180,21 +175,34 @@ section#new .s-project img {
 }
 .s-project .featured-project {
     color: var(--text-grey);
-    font-size: 2rem;
+    font-size: 1.6rem;
     letter-spacing: 2px;
     font-weight: 300;
 }
 .s-project .project-name {
     text-transform: capitalize;
     color: var(--bg-yellow);
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    text-align: right;
+    margin-bottom: 3rem;
     font-weight: 700;
 }
+.s-project .project-name::before {
+    content: "";
+    display: inline-block;
+    height: 0.1rem;
+    width: 35%;
+    background: #817031;
+    margin-right: 1rem;
+}
 .s-project .description {
-    padding: 3rem;
+    padding: 1.8rem;
     text-transform: unset;
     background: #1b1b1b;
     font-weight: 400;
     font-size: 1rem;
+    text-align: left;
 }
 .s-project .stack {
     font-size: 1rem;
@@ -210,6 +218,77 @@ section#new .s-project img {
     max-width: 30px;
     filter: invert(1);
 }
+
+/* About Section */
+section#about {
+    width: 70%;
+    margin: 5rem auto;
+    text-align: start;
+}
+section#about::before {
+    margin: 10rem auto;
+    content: "";
+    width: 80%;
+    background-color: var(--bg-yellow);
+    height: 0.1rem;
+    display: block;
+}
+section#about div:first-child {
+    float: left;
+    width: 50%;
+}
+section#about div:last-child {
+    float: right;
+    width: 50%;
+}
+section#about .introduction h2 {
+    color: var(--bg-yellow);
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    text-align: right;
+    margin-bottom: 3rem;
+}
+section#about .introduction h3 {
+    font-size: 1.3rem;
+    font-weight: 400;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+section#about .introduction p {
+    font-size: 1.3rem;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: left;
+    margin-bottom: 2rem;
+}
+.introduction h2::before {
+    content: "";
+    display: inline-block;
+    height: 0.1rem;
+    width: 70%;
+    background: #817031;
+    margin-right: 1rem;
+}
+section#about .border {
+    position: relative;
+    border: 1px solid var(--bg-yellow);
+    width: 18rem;
+    height: 25rem;
+}
+section#about img {
+    width: 18rem;
+    height: 26rem;
+    position: absolute;
+    top: -2rem;
+    left: -2rem;
+}
+section#about img:hover {
+    position: absolute;
+    top: -1.5rem;
+    left: -1.5rem;
+}
+
 #projects {
     width: 70%;
     line-height: 2rem;
@@ -241,9 +320,7 @@ section#new .s-project img {
 .text p {
     color: var(--text-grey);
 }
-section#about {
-    padding: 10rem 0;
-}
+
 section#contact div * {
     margin: 3rem auto;
     width: 40%;
