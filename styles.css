@@ -371,6 +371,11 @@ section#contact .input input {
     border: none;
     border-radius: 40px;
     padding: 5px 15px;
+    color: #fff;
+    font-size: 1.5rem;
+    color: #03a9f4;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.06),
+        -5px -5px 15px rgba(0, 0, 0, 0.7);
 }
 
 /*
