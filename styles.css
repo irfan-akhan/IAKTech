@@ -35,8 +35,29 @@ a.button {
     cursor: pointer;
     color: #000;
     font-size: 1.5rem;
+
     transition: all 0.5s ease-out;
+    animation: moveInFromRight 3s ease;
 }
+@keyframes moveInFromRight {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    50% {
+        opacity: 0.3;
+    }
+
+    90% {
+        opacity: 0.8;
+        transform: translateY(-1.5rem);
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 header a.button:hover {
     background: var(--bg-black);
     color: var(--bg-yellow);
