@@ -88,7 +88,14 @@ header .main-heading * {
     font-weight: 300;
 }
 @keyframes text {
-    50% {
+    0% {
+        opacity: 0;
+    }
+    25% {
+        opacity: 0;
+    }
+    85% {
+        opacity: 1;
         letter-spacing: 2rem;
     }
 }
