@@ -87,12 +87,19 @@ header .main-heading * {
     text-align: start;
     font-weight: 300;
 }
+@keyframes text {
+    50% {
+        letter-spacing: 2rem;
+    }
+}
 .greeting span {
     text-transform: capitalize;
     display: block;
     text-align: start;
     font-size: 3em;
     font-weight: 900;
+    position: relative;
+    animation: text 3s 1;
 }
 header .anthem {
     font-size: 2rem;
