@@ -65,12 +65,25 @@ header a.button:hover {
 nav {
     position: fixed;
     bottom: 20%;
-    left: 5%;
+    left: 4%;
     z-index: 1000;
     margin: 0;
     text-decoration: none;
     display: flex;
     flex-direction: column;
+}
+nav a {
+    position: relative;
+    display: inline-block;
+    height: 3rem;
+    width: 3rem;
+    background: var(--bg-yellow);
+    margin-bottom: 5rem;
+    box-shadow: 0 5px 15px -5px #00000070;
+    line-height: 2rem;
+}
+nav a img:hover {
+    transform: scale(1.2);
 }
 nav a::after {
     content: "";
@@ -83,7 +96,8 @@ nav a::after {
 }
 nav img {
     filter: invert(1);
-    max-width: 30px;
+    max-width: 36px;
+    transition: all 0.3s linear;
 }
 header {
     background: var(--bg-yellow);
@@ -350,14 +364,17 @@ section#about .border {
     position: relative;
     border: 1px solid var(--bg-yellow);
     width: 18rem;
-    height: 25rem;
+    height: 26rem;
+    border-radius: 5px;
 }
 section#about img {
     width: 18rem;
     height: 26rem;
+    border-radius: 5px;
     position: absolute;
     top: -2rem;
     left: -2rem;
+    transition: all 0.5s ease;
 }
 section#about img:hover {
     position: absolute;
