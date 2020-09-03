@@ -11,12 +11,12 @@
     box-sizing: border-box;
 }
 .clearfix {
-    content: "";
+    content: '';
     clear: both;
     display: table;
 }
 body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-size: 16px;
     line-height: normal;
     color: #fff;
@@ -89,7 +89,7 @@ nav a img:hover {
 }
 
 nav a::after {
-    content: "";
+    content: '';
     height: 2.8rem;
     display: block;
     background: var(--text-primary);
@@ -214,7 +214,7 @@ header .sub-heading {
 }
 .float h1::after {
     margin: 0.5rem auto;
-    content: "";
+    content: '';
     width: 30%;
     background-color: var(--text-black);
     height: 0.2rem;
@@ -222,7 +222,7 @@ header .sub-heading {
 }
 .float h1::before {
     margin: 0.5rem auto;
-    content: "";
+    content: '';
     width: 30%;
     background-color: var(--text-black);
     height: 0.2rem;
@@ -265,6 +265,7 @@ section#new .s-project img {
     cursor: pointer;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
 }
+
 .s-project .featured-project {
     color: var(--text-grey);
     font-size: 1.6rem;
@@ -281,7 +282,7 @@ section#new .s-project img {
     font-weight: 700;
 }
 .s-project .project-name::before {
-    content: "";
+    content: '';
     display: inline-block;
     height: 0.1rem;
     width: 35%;
@@ -305,10 +306,18 @@ section#new .s-project img {
     margin: 0;
     cursor: pointer;
 }
-.s-project .links a img {
+section#new .s-project .links a img {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
     margin: 1rem;
     max-width: 30px;
     filter: invert(1);
+}
+section#new .s-project .links a img:hover {
+    background: linear-gradient(
+        to right,
+        rgba(192, 166, 52, 0.2),
+        rgba(192, 166, 52, 0.2)
+    );
 }
 
 /* About Section */
@@ -319,7 +328,7 @@ section#about {
 }
 section#about::before {
     margin: 10rem auto;
-    content: "";
+    content: '';
     width: 80%;
     background-color: var(--bg-yellow);
     height: 0.1rem;
@@ -355,7 +364,7 @@ section#about .introduction p {
     margin-bottom: 2rem;
 }
 .introduction h2::before {
-    content: "";
+    content: '';
     display: inline-block;
     height: 0.1rem;
     width: 70%;
@@ -463,7 +472,7 @@ section#contact .input input {
     box-shadow: inset -2px -2px 6px rgba(255, 255, 255, 0.1),
         inset 2px 2px 6px rgba(0, 0, 0, 0.7);
 }
-section#contact .input input[type="submit"] {
+section#contact .input input[type='submit'] {
     text-align: center;
     cursor: pointer;
     border-radius: 1rem;
@@ -471,7 +480,7 @@ section#contact .input input[type="submit"] {
     margin-top: 1.5rem;
     box-shadow: -2px -2px 6px rgba(255, 255, 255, 0.1), 2px 2px 6px rgba(0, 0, 0, 0.8);
 }
-section#contact .input input[type="submit"]:active {
+section#contact .input input[type='submit']:active {
     text-align: center;
     color: var(--bg-yellow);
     margin-top: 1.5rem;
@@ -489,7 +498,7 @@ footer {
 }
 footer::before {
     margin: 5rem auto;
-    content: "";
+    content: '';
     width: 80%;
     background-color: var(--bg-yellow);
     height: 0.1rem;
