@@ -6,7 +6,7 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 1. Clone the repo
-git clone https://github.com/AlanBayWalker/portfolio.git
+git clone https://github.com/Irfan-akhan/portfolio.git
 2. Open home file
 open index.html
 3. Explore
