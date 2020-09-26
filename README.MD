@@ -1,6 +1,6 @@
 # Personal portfolio
 ##### Personal portfolio built using the good old basics. Made with Vanilla JS, CSS and HTML.
-[Live site](https://irfan-akhan.github.io/IAKTech/)
+# [Live site](https://irfan-akhan.github.io/IAKTech/)
 
 
 # Getting started
